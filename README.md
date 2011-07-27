@@ -1,4 +1,4 @@
-Safari extension for [cubbi.es](http.cubbies.heroku.com). A porting of the official Chrome code.
+Safari extension for [cubbi.es](http://cubbies.heroku.com). A porting of the official Chrome code.
 
 Install
 =======
