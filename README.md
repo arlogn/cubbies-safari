@@ -1,5 +1,5 @@
 Safari extension for [cubbi.es](http://cubbies.heroku.com).   
-A porting of the Diaspora team code for Chrome.
+A port of the Diaspora team code for Chrome.
 
 Install
 =======
