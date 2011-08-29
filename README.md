@@ -7,6 +7,6 @@ Drag the file cubbies.safariextz into Safari.
 
 Use
 =======
-Press the SHIFT-key and point your mouse on a picture.   
+Press the SHIFT-key and point your mouse on an image.   
 Image will be highlighted.   
 Click for share to Diaspora.
