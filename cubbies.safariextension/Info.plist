@@ -5,13 +5,13 @@
 	<key>Author</key>
 	<string>arlogattonero</string>
 	<key>CFBundleDisplayName</key>
-	<string>cubbies</string>
+	<string>Cubbi.es</string>
 	<key>CFBundleIdentifier</key>
 	<string>com.arlogattonero.cubbies</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleShortVersionString</key>
-	<string>1.0</string>
+	<string>1.0.1</string>
 	<key>CFBundleVersion</key>
 	<string>1</string>
 	<key>Chrome</key>
@@ -32,7 +32,7 @@
 				<key>Palette Label</key>
 				<string>cubbies</string>
 				<key>Tool Tip</key>
-				<string>goto cubbi.es</string>
+				<string>goto Cubbi.es</string>
 			</dict>
 		</array>
 	</dict>
@@ -46,13 +46,9 @@
 				<string>cubbies.js</string>
 			</array>
 		</dict>
-		<key>Stylesheets</key>
-		<array>
-			<string>cubbies.css</string>
-		</array>
 	</dict>
 	<key>Description</key>
-	<string>Send images to Diaspora via Cubbi.es. Porting of the official Diaspora chrome extension.</string>
+	<string>Post images to Diaspora via Cubbi.es.</string>
 	<key>ExtensionInfoDictionaryVersion</key>
 	<string>1.0</string>
 	<key>Permissions</key>
@@ -65,5 +61,7 @@
 			<string>All</string>
 		</dict>
 	</dict>
+	<key>Website</key>
+	<string>http://cubbies.heroku.com</string>
 </dict>
 </plist>
