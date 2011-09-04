@@ -124,7 +124,7 @@ var Cubbies = {
     stylesheet.innerHTML = "" +
       "img, #cubbies-overlay{ -webkit-transition-property: margin, box-shadow, z-index; -webkit-transition-duration: 0.1s; }\n" +
       ".cubbies-selected{ z-index: 9999; -webkit-box-shadow: 3px 3px 8px -1px #e0e !important; cursor: pointer !important; margin: -3px 3px 3px -3px; }\n" +
-      ".cubbies-selected:active{ -webkit-box-shadow: 2px 2px 5px -1px #808 !important; margin: -1px 1px 1px -1px; }\n" +
+      ".cubbies-selected:active{ -webkit-box-shadow: 2px 2px 5px -1px #909 !important; margin: -1px 1px 1px -1px; }\n" +
       "#cubbies-overlay{ position: fixed; z-index: 9999; bottom: 30px; left: 30px; -webkit-box-shadow: 0 2px 3px rgba(0,0,0,0.8); border: none; }\n" +
       "#cubbies-overlay:hover{ -webkit-box-shadow: 0 2px 3px rgb(0,0,0); }"
     document.body.appendChild(stylesheet);
