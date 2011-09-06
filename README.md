@@ -5,6 +5,11 @@ Install
 =======
 Drag the file cubbies.safariextz into Safari.
 
+Settings
+=======
+You can select the color with which the images will be highlighted.
+Preferences/Extensions/Cubbi.es
+
 Use
 =======
 Press the SHIFT-key and point your mouse on an image.   
