@@ -4,14 +4,22 @@
   <meta charset="utf-8">
   </head>
   <body>
-<script>
-safari.application.addEventListener("command", performCommand, false);    
-function performCommand(event) {  
-    if (event.command == "open-cubbies") {  
-        var newTab = safari.application.activeBrowserWindow.openTab(); // Open a new tab  
-        newTab.url = "http://cubbies.heroku.com/"; // Set tab URL to cubbi.es  
-    }  
-}  
-</script>
+	<script> 
+		function performCommand(event) {  
+			if (event.command == "open-cubbies") {  
+				var newTab = safari.application.activeBrowserWindow.openTab(); // Open a new tab  
+				newTab.url = "http://cubbies.heroku.com/"; // Set tab URL to cubbi.es  
+			}
+		}  
+		safari.application.addEventListener("command", performCommand, false);
+		function respondToMessage(messageEvent) {
+			if (messageEvent.name == "getShadowColor") {
+				var value = safari.extension.settings.getItem(messageEvent.message); // Requested value
+				safari.application.activeBrowserWindow.activeTab.page.dispatchMessage("boxShadowColor", value); // Return value
+		    } 
+
+		}
+		safari.application.addEventListener("message",respondToMessage,false);
+	</script>
   </body>
 </html>
