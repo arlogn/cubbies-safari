@@ -28,12 +28,13 @@ THE SOFTWARE.
 
 var dom = {};
 dom.query = jQuery.noConflict(true);
+var boxshadow;
 
 var Cubbies = {
   server: 'cubbies.heroku.com',
   protocol: 'https',
   selectedClass: 'cubbies-selected',
-
+  
   initialize: function(){
 	Cubbies.appendCSS();
     Cubbies.wrapImages();
@@ -119,11 +120,20 @@ var Cubbies = {
     return(location.href);
   },
 
+  getSettings: function(evt) {
+    // get webkit-box-shadow property color from safari settings
+	if (evt.name == "boxShadowColor") {
+        boxshadow = evt.message;
+		Cubbies.debug(boxshadow);
+		Cubbies.initialize();
+	}
+  },
+
   appendCSS: function(){
-    var stylesheet = document.createElement('style');
+	var stylesheet = document.createElement('style');
     stylesheet.innerHTML = "" +
       "img, #cubbies-overlay{ -webkit-transition-property: margin, box-shadow, z-index; -webkit-transition-duration: 0.1s; }\n" +
-      ".cubbies-selected{ z-index: 9999; -webkit-box-shadow: 3px 3px 8px -1px #e0e !important; cursor: pointer !important; margin: -3px 3px 3px -3px; }\n" +
+      ".cubbies-selected{ z-index: 9999; -webkit-box-shadow: 3px 3px 8px -1px #" + boxshadow + " !important; cursor: pointer !important; margin: -3px 3px 3px -3px; }\n" +
       ".cubbies-selected:active{ -webkit-box-shadow: 2px 2px 5px -1px #909 !important; margin: -1px 1px 1px -1px; }\n" +
       "#cubbies-overlay{ position: fixed; z-index: 9999; bottom: 30px; left: 30px; -webkit-box-shadow: 0 2px 3px rgba(0,0,0,0.8); border: none; }\n" +
       "#cubbies-overlay:hover{ -webkit-box-shadow: 0 2px 3px rgb(0,0,0); }"
@@ -138,7 +148,10 @@ var Cubbies = {
 },
 $window = dom.query(window);
 
-if($window.height() > 100 && $window.width() > 300){
-  Cubbies.debug('Cubbi.es');
-  Cubbies.initialize();
-}
+dom.query(document).ready(function(){
+   if($window.height() > 100 && $window.width() > 300){
+		safari.self.tab.dispatchMessage("getShadowColor", "cubbies-box-shadow");
+		safari.self.addEventListener("message", Cubbies.getSettings, false);
+		Cubbies.debug('Cubbi.es');
+	}
+});
