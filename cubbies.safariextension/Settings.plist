@@ -1,5 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
-<array/>
+<array>
+	<dict>
+		<key>DefaultValue</key>
+		<string>0000ff</string>
+		<key>Key</key>
+		<string>cubbies-box-shadow</string>
+		<key>Secure</key>
+		<false/>
+		<key>Title</key>
+		<string>Select box shadow color</string>
+		<key>Titles</key>
+		<array>
+			<string>Blue</string>
+			<string>Red</string>
+			<string>Green</string>
+		</array>
+		<key>Type</key>
+		<string>RadioButtons</string>
+		<key>Values</key>
+		<array>
+			<string>0000ff</string>
+			<string>ff0000</string>
+			<string>00ff00</string>
+		</array>
+	</dict>
+</array>
 </plist>
