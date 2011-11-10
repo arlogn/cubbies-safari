@@ -1,3 +1,9 @@
+/****************************************************
+ Cubbi.es for Safari
+ 2011 by arlogattonero <http://dia.so/arlogattonero>
+ v.1.2.0
+*****************************************************/
+
 /*****************************************************************************
  * THIS SNIPPET: Copyright 2004 ThoughtWorks, Inc
  * Licensed under the Apache License, Version 2.0 */
