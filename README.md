@@ -1,5 +1,5 @@
 Safari extension for [cubbi.es](http://cubbies.heroku.com).   
-A port of the Diaspora team code for Chrome.
+A port of the Diaspora-team code for Chrome.
 
 Install
 =======
@@ -12,6 +12,6 @@ Preferences/Extensions/Cubbi.es
 
 Use
 =======
-Press the SHIFT-key and point your mouse on an image.   
+Hit SHIFT-key with mouse over an image.   
 Image will be highlighted.   
 Click for share to Diaspora.
