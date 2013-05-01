@@ -1,5 +1,4 @@
-Safari extension for [cubbi.es](http://cubbies.heroku.com).   
-A port of the Diaspora-team code for Chrome.
+Safari extension for [cubbi.es](http://cubbies.heroku.com).
 
 Install
 =======
@@ -10,8 +9,12 @@ Settings
 You can select the color with which the images will be highlighted.
 Preferences/Extensions/Cubbi.es
 
-Use
+Usage
 =======
 SHIFT-key over an image.   
 Image will be highlighted.   
 Click for share to Diaspora.
+
+NOTE
+=======
+cubbi.es application is no longer usable.
