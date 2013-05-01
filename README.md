@@ -15,6 +15,6 @@ SHIFT-key over an image.
 Image will be highlighted.   
 Click for share to Diaspora.
 
-NOTE
+Note
 =======
 cubbi.es application is no longer usable.
