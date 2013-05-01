@@ -12,6 +12,6 @@ Preferences/Extensions/Cubbi.es
 
 Use
 =======
-Hit SHIFT-key with mouse over an image.   
+SHIFT-key over an image.   
 Image will be highlighted.   
 Click for share to Diaspora.
